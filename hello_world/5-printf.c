@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * main - Wall gcc
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
