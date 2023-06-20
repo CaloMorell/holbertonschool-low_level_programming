@@ -8,7 +8,8 @@
 int main(void)
 
 {
-	char alf[52] = "abcdefghijklmnopqrstuvwxyz/ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	char alf[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		
 		int i;
 
 	for (i = 0; i < 52; i++)
