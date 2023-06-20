@@ -6,16 +6,19 @@
  * Return: Always 0.
  */
 int main(void)
-
 {
-	char alf[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-		
-		int i;
+	char alp = 'a';
+	char alphabet - 'A';
 
-	for (i = 0; i < 52; i++)
+	for (alp = 'a'; alp <= 'z'; alp++)
 	{
-		putchar(alf[i]);
+		putchar(alp);
+	}
+	for (alphabet = 'A'; alphabet <= 'Z'; alphabet)
+	{
+		putchar(alphabet);
 	}
 	putchar('\n');
+
 	return (0);
 }
