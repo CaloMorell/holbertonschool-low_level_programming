@@ -12,12 +12,12 @@ void print_alphabet(void)
 {
 	char alp;
 
-	for (alp = 'a'; alp < 'z'; alp++)
+	for (alp = 'a'; alp <= 'z'; alp++)
 	{
-	     putchar(alp);
+	     _putchar(alp);
 	}
 
-	putchar('\n');
+	_putchar('\n');
 
 	return (0);
 }
