@@ -8,7 +8,7 @@
  * Return: Always 0.
  *
  */
-int maid(void)
+int main(void)
 {
 	int alp;
 
