@@ -12,11 +12,11 @@ int main(void)
 {
 int base;
 
-for (base = 0; base '<' 16; base++)
+for (base = 0; base < 16; base++)
 
 {
 
-if (base <10)
+if (base < 10)
 
 {
 
