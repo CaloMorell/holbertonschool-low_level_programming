@@ -10,21 +10,21 @@
  */
 int main(void)
 {
-    int hola;
+int hola;
 
-    for (hola = 0; hola < 10; hola++)
-    {
-        putchar('0' + hola);
+for (hola = 0; hola < 10; hola++)
+{
+putchar('0' + hola);
 
-        if (hola != 9)
-        {
-            putchar(',');
-            putchar(' ');
-        }
-    }
+if (hola != 9)
+{
+putchar(',');
+putchar(' ');
+}
+}
 
-    putchar('\n');
+putchar('\n');
 
-    return 0;
+return 0;
 }
 
