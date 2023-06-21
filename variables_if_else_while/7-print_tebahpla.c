@@ -12,7 +12,7 @@ int maid(void)
 {
 	int alp;
 
-	for (alp = 'z'; apl >= 'a'; alp--)
+	for (alp = 'z'; alp >= 'a'; alp--)
 	{
 		putchar(alp);
 	}
