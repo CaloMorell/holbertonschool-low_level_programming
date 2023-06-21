@@ -11,18 +11,22 @@
 int main(void)
 
 {
-	int base;
+	int num;
 
-	for (base = 0; base < 16; base++)
+	for (num = 0; num < 16; num++)
 	{
-	    if (base <10)
+	    if (num <10)
+
 	    {
-		    putchar('0' + base);
+		    putchar('0' + num);
 	    }
+
 	    else
+
 	    {
-		    putchar('a' + (base - 10));
+		    putchar('a' + (num - 10));
 	    }
+
 	}
 
 	putchar('\n');
