@@ -9,27 +9,23 @@
  *
  */
 int main(void)
-
 {
-	int num;
+	int base;
 
-	for (num = 0; num < 16; num++)
+	for (base = 0; base < 16; base++)
 	{
-	    if (num <10)
-
+	    if (base <10)
 	    {
-		    putchar('0' + num);
+		 putchar('0' + base);
 	    }
-
 	    else
-
 	    {
-		    putchar('a' + (num - 10));
+		 putchar('a' + (base - 10));
 	    }
-
 	}
 
 	putchar('\n');
 
 	return (0);
 }
+
