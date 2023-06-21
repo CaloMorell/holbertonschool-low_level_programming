@@ -10,22 +10,32 @@
  */
 int main(void)
 {
-	int base;
+int base;
 
-	for (base = 0; base < 16; base++)
-	{
-	    if (base <10)
-	    {
-		 putchar('0' + base);
-	    }
-	    else
-	    {
-		 putchar('a' + (base - 10));
-	    }
-	}
+for (base = 0; base < 16; base++)
 
-	putchar('\n');
+{
 
-	return (0);
+if (base <10)
+
+{
+
+putchar('0' + base);
+
+}
+
+else
+
+{
+
+putchar('a' + (base - 10));
+}
+
+}
+
+putchar('\n');
+
+return (0);
+
 }
 
