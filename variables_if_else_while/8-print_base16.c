@@ -12,7 +12,7 @@ int main(void)
 {
 int base;
 
-for (base = 0; base <= 16; base++)
+for (base = 0; base '<' 16; base++)
 
 {
 
