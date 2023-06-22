@@ -9,11 +9,11 @@
  * Return: The absolute value of an integer.
  */
 
-int _abs(int n)
+int _abs(int m)
 {
-	if (n < 0)
-		return (-n);
+	if (m < 0)
+		return (-m);
 	else
-		return (n);
+		return (m);
 
 }
