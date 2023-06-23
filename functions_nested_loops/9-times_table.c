@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 /**
  * times_table - Prints the 9 times table, starting with 0.
