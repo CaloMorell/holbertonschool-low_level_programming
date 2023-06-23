@@ -7,15 +7,11 @@
 
 void times_table(void)
 {
-int i, result;
-
-for (i = 0; i <= 9; i++)
-
-{
-
-result = 9 * i;
-printf("9 * %d = %d\n", i, result)
-
-}
-
+	int i, result;
+	
+	for (i = 0; i <= 9; i++)
+	{
+		result = 9 * i;
+		printf("9 * %d = %d\n", i, result);
+	}
 }
