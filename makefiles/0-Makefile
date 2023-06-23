@@ -1,7 +1,2 @@
-school: main.c functions.c
+school: main.c functions.c 
     gcc -o school main.c functions.c
-
-all: school
-
-clean:
-    rm -f school
