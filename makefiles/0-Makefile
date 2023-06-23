@@ -4,4 +4,4 @@ school: main.c functions.c
 all: school
 
 clean:
-	rm -f school
+	rm -f 0-Makefile
