@@ -15,8 +15,9 @@ while (s[length] != '\0')
 {
 length++;
 }
+int i;
 
-for (int i = length - 1; i >= 0; i--)
+for (i = length - 1; i >= 0; i--)
 {
 printf("%c", s[i]);
 }
