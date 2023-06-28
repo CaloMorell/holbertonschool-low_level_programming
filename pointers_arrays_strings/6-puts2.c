@@ -10,15 +10,15 @@
 
 void puts2(char *str)
 
-	{
-    int a;
+{
+int a;
 
-    for (a = 0; s[a] != '\0'; a++)
-    {
-        if (a % 2 == 0)
-        {
-            printf("%c", s[a]);
-        }
-    }
-    printf("\n");
+for (a = 0; s[a] != '\0'; a++)
+{
+if (a % 2 == 0)
+{
+printf("%c", is[a]);
+}
+}
+printf("\n");
 }
