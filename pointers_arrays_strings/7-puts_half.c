@@ -8,13 +8,21 @@
 
 void puts_half(char *str)
 {
-	int i;
-	int length = strlen(str);
-	int strat_index = (length - 1) / 2;
+	int index, half;
 
-	for (i = strat_index; i < length; i++)
+	index = 0;
+	while (str[index] != '\0')
+		index++;
+
+	half = index / 2;
+
+	if (index % 2 == 1)
+		half++;
+
+	while (half < index)
 	{
-		printf("%c", str[i]);
+		_putchar(str[half]);
+		half++;
 	}
-	printf("\n");
+	_putchar('\n');
 }
