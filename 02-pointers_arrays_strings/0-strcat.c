@@ -9,19 +9,22 @@
  * Return: This return to dest, that concatenates two strings.
  */
 
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, const char *src)
 {
-	int i, j;
-
-	for (i = 0; dest[i] != '\0'; i++)
-		;
-	for (j = 0; src[j] != '\0'; j++)
+	
+	while (dest != '\0')
 	{
-		dest[i] = scr[j];
-
-		i++;
+		dest++;
 	}
-	dest[i] = '\0';
+	
+	while (src != '\0')
+	{
+		dest = src;
+		dest++;
+		src++;
+	}
+
+	dest = '\0';
 
 	return (dest);
 }
