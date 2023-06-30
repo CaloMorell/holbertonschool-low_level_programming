@@ -12,14 +12,9 @@ void print_chessboard(char (*a)[8])
 	for (i = 0; i < 8; i++)
 	{
 		for (j = 0; j < 8; j++)
-		{
-			if (a[i][j] == '\0')
-				printf(" ");
-			else
-				printf("%c", a[i][j]);
+			putchar(a[i][j]);
 
-			printf(" ");
-		}
-		printf("\n");
+		putchar('\n');
 	}
 }
+
