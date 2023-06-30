@@ -2,14 +2,15 @@
 #include <stdio.h>
 
 /**
- * _memecpy - copies memory area.
- * @dest: memory where is stored.
- * @src: memory where is copied.
- * @n: number of bytes.
+ * _memcpy - This function copies `n` bytes from the memory area pointed to by `src`
+ *              to the memory area pointed to by `dest`. The memory areas must not overlap.
  *
- * Return: a pointer to dest.
+ * @dest: pointer to the destination memory area.
+ * @src: pointer to the source memory area.
+ * @n: number of bytes to be copied.
+ *
+ * Return: a pointer to the destination memory area (`dest`).
  */
-
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
@@ -18,5 +19,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		dest[i] = src[i];
 	}
-	return (dest);
+
+	return dest;
 }
