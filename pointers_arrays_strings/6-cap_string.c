@@ -8,13 +8,13 @@
  * Return: A pointer to the changed string.
  */
 
-char *cap_string(char *)
+char *cap_string(char *str)
 {
 	int i = 0;
 
 	while (str[i])
 	{
-		whilw (!(str[i] >= 'a' && str[i] <= 'z'))
+		while (!(str[i] >= 'a' && str[i] <= 'z'))
 			i++
 
 			if (str[i - 1] == ' ' ||
