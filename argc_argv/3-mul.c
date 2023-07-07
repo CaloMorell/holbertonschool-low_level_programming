@@ -2,16 +2,15 @@
 #include <stdio.h>
 
 /**
- * main - Program that multiplies two numbers.
- * @argc: This is the argument count
- * @argv: This is the argument vector
+ * main - Programa que multiplica dos números.
+ * @argc: Cantidad de argumentos
+ * @argv: Vector de argumentos
  *
  * Return: 0;
  */
-
 int main(int argc, char *argv[])
 {
-	int index, multiplication;
+	int index, mult;
 
 	mult = 1;
 	if (argc < 3)
