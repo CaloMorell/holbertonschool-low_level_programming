@@ -14,15 +14,14 @@
 int main(int argc, char *argv[])
 {
 	int sum = 0;
+	int i;
 
 	if (argc == 1)
 	{
 		printf("0\n");
 		return (0);
 	}
-
-	int i;
-
+	
 	for (i = 1; i < argc; i++)
 	{
 		char *num = argv[i];
