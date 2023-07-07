@@ -21,7 +21,9 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (int i = 1; i < argc; i++)
+	int i;
+
+	for (i = 1; i < argc; i++)
 	{
 		char *num = argv[i];
 		int j = 0;
