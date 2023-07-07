@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - Programa que suma números positivos
@@ -10,7 +11,6 @@
  *
  * Return: 0;
  */
-
 int main(int argc, char *argv[])
 {
 	int sum = 0;
@@ -20,10 +20,10 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
+
 	for (int i = 1; i < argc; i++)
 	{
 		char *num = argv[i];
-
 		int j = 0;
 
 		while (num[j] != '\0')
@@ -35,8 +35,11 @@ int main(int argc, char *argv[])
 			}
 			j++;
 		}
+
 		sum += atoi(num);
 	}
+
 	printf("%d\n", sum);
 	return (0);
 }
+
