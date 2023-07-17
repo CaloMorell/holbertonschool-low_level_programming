@@ -9,23 +9,25 @@
 
 struct dog
 {
-  char *name;
-  float age;
-  char *owner;
+
+char *name;
+float age;
+char *owner;
 
 };
 
-int main()
+int main(void)
+
 {
-  struct dog myDog;
+struct dog myDog;
 
-  myDog.name = "Poppy";
-  myDog.age = 5;
-  myDog.owner = "Bob";
+myDog.name = "Poppy";
+myDog.age = 5;
+myDog.owner = "Bob";
 
-  printf("name the dog: %s\n", myDog.name);
-  printf("age the dog: %f\n", myDog.age);
-  printf("owner the dog: %s\n", myDog.owner);
+printf("name the dog: %s\n", myDog.name);
+printf("age the dog: %f\n", myDog.age);
+printf("owner the dog: %s\n", myDog.owner);
 
-  return (0);
+return (0);
 }
