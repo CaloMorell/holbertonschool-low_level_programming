@@ -1,3 +1,6 @@
+#ifndef DOG_H
+#define DOG_H
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -31,3 +34,5 @@ printf("owner the dog: %s\n", myDog.owner);
 
 return (0);
 }
+
+#endif
