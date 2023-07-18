@@ -1,18 +1,24 @@
+#ifndef DOG_H
+#define DOG_H
+
+#include <stdlib.h>
 #include <stdio.h>
-#include "dog.h"
 /**
- * init_dog - initializes a variable of type struct dog.
- * @d: pionters to struct dog to initialize.
- * @name: name to initialize
- * @age: age to initialize
- * @owner: owner to initialize.
+ * struct dog - this descripction about which dog
+ * @name: sdfasdf
+ * @age:  asdfas
+ * @owner:  asdf
  */
 
-void init_dog(struct dog *d, char *name, float age, char *owner)
+struct dog
 {
-  if (d == NULL)
-    d == malloc(sizeof(struct dog));
-  d->name = name;
-  d->age = age;
-  d->owner = owner;
-}
+  char *name;
+  float age;
+  char *owner;
+};
+typedef struct dog dog_t;
+dog_t *new_dog(char *name, float age, char *owner);
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+void free_dog(dog_t *d);
+#endif
