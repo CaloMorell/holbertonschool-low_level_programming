@@ -28,7 +28,7 @@ printf("Name of the dog: %s\n", myDog.name);
 printf("Age of the dog: %.1f\n", myDog.age);
 printf("Owner of the dog: %s\n", myDog.owner);
 
-return 0;
+return (0);
 }
 
 #endif /* DOG_H */
