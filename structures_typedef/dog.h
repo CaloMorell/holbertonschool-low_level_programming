@@ -1,11 +1,19 @@
 #include <stdio.h>
-#include "dog.h"
 
 /**
  * main - Define a new type struct dog.
  *
  * Return - 0.
  */
+
+struct dog
+{
+
+char *name;
+float age;
+char *owner;
+
+};
 
 int main(void)
 
@@ -16,7 +24,10 @@ myDog.name = "Poppy";
 myDog.age = 5;
 myDog.owner = "Bob";
 
-printf("My name is %s, and I am %.1f :) - Woof!\n", myDog.name, myDog.age);
+printf("name the dog: %s\n", myDog.name);
+printf("age the dog: %f\n", myDog.age);
+printf("owner the dog: %s\n", myDog.owner);
 
 return (0);
 }
+
