@@ -1,34 +1,18 @@
-#ifndef DOG_H
-#define DOG_H
-
 #include <stdio.h>
 #include "dog.h"
 
-struct dog
-{
-char *name;
-float age;
-char *owner;
-};
-
 /**
- * main - Entry point of the program.
+ * main - check the code
  *
- * Return: 0 on success.
+ * Return: Always 0.
  */
 int main(void)
 {
-struct dog myDog;
+    struct dog my_dog;
 
-myDog.name = "Poppy";
-myDog.age = 5;
-myDog.owner = "Bob";
-
-printf("Name of the dog: %s\n", myDog.name);
-printf("Age of the dog: %.1f\n", myDog.age);
-printf("Owner of the dog: %s\n", myDog.owner);
-
-return (0);
+    my_dog.name = "Poppy";
+    my_dog.age = 3.5;
+    my_dog.owner = "Bob";
+    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
+    return (0);
 }
-
-#endif /* DOG_H */
