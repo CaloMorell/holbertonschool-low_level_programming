@@ -16,9 +16,7 @@ myDog.name = "Poppy";
 myDog.age = 5;
 myDog.owner = "Bob";
 
-printf("name the dog: %s\n", myDog.name);
-printf("age the dog: %f\n", myDog.age);
-printf("owner the dog: %s\n", myDog.owner);
+printf("My name is %s, and I am %.1f :) - Woof!\n", myDog.name, myDog.age);
 
 return (0);
 }
