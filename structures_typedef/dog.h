@@ -10,7 +10,7 @@
  * Return - 0.
  */
 
-int main(struct dog, char *name, float age, char *owner)
+int struct_dog(char *name, float age, char *owner)
 {
 struct dog myDog;
 
