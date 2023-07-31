@@ -38,17 +38,18 @@ All your header files should be include guarded
 
 Repo:
 GitHub repository: holbertonschool-low_level_programming
+
 Directory: singly_linked_lists
 
 File:
-README.md
-lists.h
-_putchar
-0-print_list.c
-1-list_len.c
-2-add_node.c
-3-add_node_end.c
-4-free_list.c
+README.md,
+lists.h,
+_putchar,
+0-print_list.c,
+1-list_len.c,
+2-add_node.c,
+3-add_node_end.c,
+4-free_list.c.
 
 Tasks
 0. Print list
