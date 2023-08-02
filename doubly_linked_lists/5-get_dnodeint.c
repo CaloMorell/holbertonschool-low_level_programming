@@ -17,8 +17,8 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	for (i = 0; head != NULL && i < index; i++)
 		head = head->next;
 
-	/*Al salir del bucle, head apuntará al nodo en la posición index o será NULL*/
-	/*dependiendo de si el índice es válido o no.*/
+	/*Al salir del bucle, head apuntará al nodo en la posición index o*/
+	/*será NULL dependiendo de si el índice es válido o no.*/
 	/*Verificamos si llegamos al índice deseado*/
 	if (i == index)
 		return (head);
