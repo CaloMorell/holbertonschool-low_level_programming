@@ -8,32 +8,36 @@
  * Return: address of new element or NULL for failure
  */
 
-/* Función para agregar un nuevo nodo al comienzo de la lista*/
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	/*Crear un nuevo nodo*/
-	new_node = malloc(sizeof(dlistint_t *));
-	if (new_node == NULL)
-	{
-		/*Si falló la asignación de memoria, retornar NULL*/
-		return (NULL);
-	}
+    dlistint_t *new_node, *tmp;
 
-	/*Configurar el valor del nuevo nodo y sus punteros*/
-	new_node->n = n;
-	new_node->prev = NULL;
-	new_node->next = *head;
+    /*Verificar si el puntero a la cabeza de la lista es nulo*/
+    if (head == NULL)
+        return (NULL);
 
-	/*Si la lista no está vacía, actualizar el nodo anterior del actual head*/
-	if (*head != NULL)
-	{
-		(*head)->prev = new_node;
-	}
+    /*Asignar memoria para el nuevo nodo*/
+    new_node = malloc(sizeof(dlistint_t *));
+    if (new_node == NULL)
+        return (NULL);
 
-	/*Actualizar la cabeza de la lista para que apunte al nuevo nodo*/
-	*head = new_node;
+    /*Configurar el valor del nuevo nodo y su puntero previo*/
+    new_node->n = n;
+    new_node->prev = NULL;
 
-	/*Retornar la dirección del nuevo elemento*/
-	return (new_node);
+    /*Guardar la dirección del nodo actual de la cabeza en 'tmp'*/
+    tmp = *head;
+
+    /*Hacer que el puntero 'next' del nuevo nodo apunte al nodo actual de la cabeza*/
+    new_node->next = tmp;
+
+    /*Actualizar la cabeza de la lista para que apunte al nuevo nodo*/
+    *head = new_node;
+
+    /*Si el nodo actual de la cabeza no es nulo, actualizar su puntero previo para que apunte al nuevo nodo*/
+    if (tmp)
+        tmp->prev = *head;
+
+    /*Retornar la dirección del nuevo nodo agregado*/
+    return (new_node);
 }
-
