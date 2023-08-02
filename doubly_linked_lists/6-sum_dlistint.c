@@ -14,7 +14,8 @@ int sum_dlistint(dlistint_t *head)
 
 	/*Recorrer la lista mientras el puntero head no sea NULL*/
 	/*Esto significa que todavía hay elementos en la lista por recorrer*/
-	while (head) {
+	while (head != NULL)
+	{
 		/*Sumar el valor del nodo actual (head->n) a la variable sum*/
 		sum += head->n;
 
