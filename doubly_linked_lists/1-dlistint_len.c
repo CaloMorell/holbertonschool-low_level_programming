@@ -11,7 +11,6 @@ size_t dlistint_len(const dlistint_t *h)
 {
 	size_t count = 0;
 
-	//Recorrer la lista enlazada mientras el puntero no sea nulo
 	while (h != NULL)
 	{
 		h = h->next;
