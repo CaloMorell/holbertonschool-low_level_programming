@@ -28,15 +28,15 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	/*Guardar la dirección del nodo actual de la cabeza en 'tmp'*/
 	tmp = *head;
 
-	/*Hacer que el puntero 'next' del nuevo nodo apunte
-	 * al nodo actual de la cabeza*/
+	/*Hacer que el puntero 'next' del nuevo nodo apunte*/
+	/*al nodo actual de la cabeza*/
 	new_node->next = tmp;
 
 	/*Actualizar la cabeza de la lista para que apunte al nuevo nodo*/
 	*head = new_node;
 
-	/*Si el nodo actual de la cabeza no es nulo,
-	 * actualizar su puntero previo para que apunte al nuevo nodo*/
+	/*Si el nodo actual de la cabeza no es nulo*/
+	/*actualizar su puntero previo para que apunte al nuevo nodo*/
 	if (tmp)
 		tmp->prev = *head;
 
