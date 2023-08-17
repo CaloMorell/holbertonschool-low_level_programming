@@ -1,27 +1,62 @@
 #include "hash_tables.h"
+#include <stdio.h>
 
 /**
-  * hash_table_get - retrieves a value associated with a key.
-  * @ht: pointer to hash table.
-  * @key: key.
-  * Return: value associated with the key, or NULL if key couldn’t be found.
-  */
-char *hash_table_get(const hash_table_t *ht, const char *key)
+ * hash_table_print_sep - print a separator between elements in a hash table
+ */
+void hash_table_print_sep(void)
 {
-	unsigned long int index;
-	hash_node_t *temp_node;
+	fputs(", ", stdout);
+}
 
-	if (!ht || !key)
-		return (NULL);
-
-	/* get index */
-	index = key_index((const unsigned char *)key, ht->size);
-	temp_node = ht->array[index];
-	while (temp_node)
+/**
+ * hash_chain_print - print the elements in a singly-linked list
+ * @head: a pointer to the singly-linked list
+ */
+void hash_chain_print(const hash_node_t *head)
+{
+	for (;;)
 	{
-		if (strcmp(temp_node->key, key) == 0)
-			return (temp_node->value);
-		temp_node = temp_node->next;
+		if (head->value)
+			printf("'%s': '%s'", head->key, head->value);
+		else
+			printf("'%s': %s", head->key, head->value);
+
+		head = head->next;
+
+		if (head)
+			hash_table_print_sep();
+		else
+			return;
 	}
-	return (NULL);
+}
+
+/**
+ * hash_table_print - print the elements in a hash table
+ * @ht: a pointer to the hash table
+ */
+void hash_table_print(const hash_table_t *ht)
+{
+	void (*print_sep)() = NULL;
+	hash_node_t **array = NULL;
+	unsigned long int index = 0;
+	unsigned long int size = 0;
+
+	if (ht)
+	{
+		putchar('{');
+		for (array = ht->array, size = ht->size; index < size; ++index)
+		{
+			if (array[index])
+			{
+				if (print_sep)
+					print_sep();
+				else
+					print_sep = hash_table_print_sep;
+
+				hash_chain_print(array[index]);
+			}
+		}
+		puts("}");
+	}
 }
